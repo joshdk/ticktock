@@ -55,7 +55,7 @@ static int resize_timers(void){
 	unsigned long long int *tmp = NULL;
 	unsigned int timers_size_new = 0;
 	if(timers == NULL){
-		timers_size_new = 1;
+		timers_size_new = 256;
 	}else{
 		timers_size_new = timers_size * 2;
 	}

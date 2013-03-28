@@ -1,3 +1,6 @@
+#ifndef _TICKTOCK_C_
+#define _TICKTOCK_C_
+
 #include "ticktock.h"
 
 
@@ -90,3 +93,5 @@ unsigned long long int tock(void){
 	timers_length -= 1;
 	return ticks - timers[timers_length];
 }
+
+#endif
